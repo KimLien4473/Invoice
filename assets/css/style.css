@@ -1,0 +1,70 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: white; /* tránh bị trong suốt */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* tạo bóng nhẹ */
+  z-index: 999; /* đảm bảo header nằm trên */
+  padding: 10px 0;
+}
+
+.header .body {
+  display: flex;
+  align-items: center; /* căn giữa theo chiều dọc */
+}
+
+/* Navigation */
+.nav {
+  margin-left: auto;
+}
+
+.nav ul {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* khoảng cách giữa các li */
+  list-style: none; /* bỏ chấm tròn */
+  padding: 0;
+  margin: 0;
+}
+
+.nav a {
+  color: #000;
+  font-size: 1.6rem;
+  padding: 8px 16px;
+  transition: 0.3s;
+}
+
+.nav a:hover {
+  color: #2d19e8;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Logo*/
+.logo {
+  width: 100px;
+  height: auto;
+}
+/* Các icon */
+.nav li.icon img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+}
+
+/* Avatar người dùng */
+.nav li.icon .avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%; /* Làm avatar tròn */
+  object-fit: cover;
+  border: 2px solid #ccc; /* Tạo viền nhẹ */
+  transition: 0.3s;
+}
+
+.nav li.icon .avatar:hover {
+  border-color: #d60000; /* Hover đẹp hơn */
+}

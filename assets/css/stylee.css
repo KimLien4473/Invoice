@@ -1,0 +1,59 @@
+.header {
+  top: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  box-shadow: 0 2px 8px;
+  z-index: 999; /* Ưu tiên hiển thị trên cùng */
+  padding: 10px 0;
+}
+.header .body {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  margin-left: auto;
+}
+
+.nav ul {
+  display: flex;
+  align-items: center;
+  gap: 30px; /* khoảng cách giữa các li */
+  list-style: none; /* bỏ chấm tròn */
+}
+
+.nav a {
+  color: #000;
+  font-size: 1.4rem;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+.nav a:hover {
+  color: rgb(211, 60, 60);
+}
+
+.logo {
+  width: 100px;
+  font-size: 1.5rem;
+}
+
+.nav li.icon img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%; /* Làm avatar tròn */
+  border: 2px solid rgb(236, 235, 235); /* Tạo viền nhẹ */
+}
+.nav li.icon img:hover {
+  border-color: rgb(240, 137, 137);
+}
+
+.nav li.icon .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; /* Làm avatar tròn */
+  border: 3px solid #65fd88; /* Tạo viền nhẹ */
+}
+.nav li.icon .avatar:hover {
+  border-color: red;
+}
